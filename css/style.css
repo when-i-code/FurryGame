@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section#score {
+  width: 100%;
+}
+
+#board {
+  width: 640px;
+  height: 640px;
+  margin: 60px auto;
+}
+
+#board  > div {    
+  border: 1px solid black;
+  float: left;
+  width: 64px;
+  height: 64px;
+}
+
+
+section#score div {
+  width: 10em;
+  height: 3em;
+  text-align: center;
+  padding: 0.5em;
+  background-color: rgba(211,211,211, 0.75);
+  border: 1px solid lightgray;
+  border-radius: 1px;
+  box-shadow: 1px 1px 5px 1px lightgray;
+  margin: 80px auto;
+}
+
+.furry {
+  background-image: url('../images/furry.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.coin {
+  background-image: url('../images/coin.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.invisible {
+  display: none;
+}
+section#over {
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 80px;
+  font-weight: bolder;
+}
+
+section#over pre {
+  width: 100%;
+}
+
+#gameOver {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#over p {
+  justify-content: center;
+}
